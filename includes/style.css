@@ -1,0 +1,2821 @@
+@viewport {
+
+zoom:1;
+}
+
+button {
+background-color: transparent;
+border: none;
+cursor: pointer;
+}
+
+button:focus {outline:0;}
+
+#teams-list {
+display: none;
+}
+
+#players-list {
+display: none;
+}
+
+
+/*---------------------DESKTOP VIEW---------------------*/
+
+
+@media screen and (min-width: 1038px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    header, main, nav, aside, article, section, footer {
+        display: block;
+    }
+
+    #wrapper {
+        width: 1300px;
+        margin: 0px auto;
+        height: 100vh;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+
+    /*---------------------INDEX---------------------*/
+
+    #index header {
+        width: 1300px;      height: 140px;
+        background-color: #606060;
+    }
+
+    #index #logo {
+        width: 340px;    height: 110px;
+        background: url(../images/scoutITLogo.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: relative;
+        top: 45px;left: 515px;
+    }
+        
+    #index header > p {
+        display: inline;
+        color: #ffffff;
+        float: right;
+        position: relative;
+        top: 25px;   right: 100px;
+    }
+    #index #reuven {
+        background: url(../images/reuven.png);
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
+        width: 85px;    height: 85px;
+        float: right;
+        left: 100px;
+    }
+
+    #index main > section {
+        height: 730px;  width: 1370px;
+        background: url(../images/BackgroundPic.png);
+        background-repeat: no-repeat;
+        display: block;
+        opacity: 0.75;
+    }
+
+    #index #self, #index #rival {
+        width: 390px;   height: 71px;
+        position: relative;
+        left: 470px;
+        border-radius: 7px;
+        background-color: #111111;
+        text-align: center;
+        color: #ffffff;
+        padding-top: 20px;
+        padding-left: 10px;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none;
+    }
+
+    /* too long */
+    #index main > section >  article > a{   
+        text-decoration: none;
+        color: #d6dbda;
+    }
+
+    #index #self{
+        top: 285px; 
+    }
+
+    #index #rival{
+        top: 340px;
+    }
+
+    /*---------------------//INDEX---------------------*/
+
+
+
+    /*---------------------MainMenu---------------------*/
+
+    #selfMenu header {
+        width: 1300px;      height: 140px;
+        background-color: #606060;
+    }
+
+    #selfMenu #logo {
+        width: 340px;    height: 110px;
+        background: url(../images/scoutITLogo.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: relative;
+        top: 45px;left: 515px;
+    }
+
+    #selfMenu header > p {
+        display: inline;
+        color: #ffffff;
+        float: right;
+        position: relative;
+        top: 25px;   right: 100px;
+    }
+    #selfMenu #reuven {
+        background: url(../images/reuven.png);
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
+        left: 100px;
+        width: 85px;    height: 85px;
+        float: right;
+        
+    }
+
+
+    .theNav {
+        width: 1300px;  height: 45px;
+        background-color: #606060 !important;
+    }
+
+    #navMainOptions {
+        position: relative;
+        right: 10px;
+    }
+
+    .theNav li {
+        list-style: none;
+        display: inline;
+        position: relative;
+        right: 14px;
+        bottom: 14px;
+    }
+
+    .theNav li a {
+        text-decoration: none;
+        position: relative;
+        top: 15px;
+        padding-left: 50px;
+        padding-right: 35px;
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    #navMainOptions {
+        display: none;
+    }
+
+    .dropDownMenu i {
+        font-size: 22px;
+        position: relative;
+        right: 18px;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        border-radius: 10px;
+        height: 545px;
+
+    }
+
+    .hamburger i{
+        font-size: 32px;
+        position: relative;
+        bottom: 40px;   right: 17px;
+    }
+
+    .dropDownMenu .dropdown-item { 
+        position: relative;
+        width: 250px;   height: 50px;
+        right: 10px;
+        padding-left: 45px;
+        padding-top: 0px;
+        color: #111111;
+    }
+
+    .dropDownMenu a {
+        position: relative;
+    }
+
+    .dropDownMenu .dropdown-item:hover {
+        width: 230px;   height: 48px;
+        background-color: transparent;
+    }
+
+    .dropDownMenu {
+        position: absolute;
+        top: 48px;
+        left: 13px;
+    }
+
+    .dropdown-divider {
+        position: relative;
+    }
+
+    #selfMenu main > section {
+        width: 1300px;;height: 730px;
+        background-color: #f7f6f6;
+        border: solid 0.5px;
+        display: block;
+        position: relative;
+        opacity: 1;
+    }
+
+    #selfMenu main > section > article > h3 {
+        width: 1150px;
+        padding-top: 29px;
+        padding-bottom: 7px;
+        padding-left: 55px;
+        font-size: 25px;
+        border-bottom: solid 1px;
+        position: relative;
+        left: 50px;
+    }
+
+
+
+    /*First line of players*/
+
+    #selfMenu .playerHeadFirstLine {
+        position: relative;
+        top: 40px;
+        float: left;
+    }
+
+    #selfMenu  .playerHeadFirstLine p {
+        position: relative;
+        font-size: 14px;
+        right: 27px;
+    }
+
+    #selfMenu #kadoshHead {
+        left: 130px;
+    }
+
+    #selfMenu #setkusHead {
+        left: 250px;
+    }
+
+    #selfMenu #tamasHead {
+        left: 375px;
+    }
+
+    #selfMenu #resmusHead {
+        left: 500px;
+    }
+
+    #selfMenu #kapilotoHead {
+        left: 630px;
+    }
+
+
+
+    /*Second line of players*/
+
+    #selfMenu .second {
+        float: left;
+    }
+
+
+    #selfMenu .second > .playerHeadSecondLine {
+        position: relative;
+        top: 200px;
+        font-size: 14px;    float: left;
+    }
+
+    #selfMenu .playerHeadSecondLine p {
+        position: relative;
+        right: 27px;
+    }
+
+
+    #selfMenu #fishlerHead {
+        right: 502px;
+    }
+
+    #selfMenu #malulHead {
+        right: 382px;
+    }
+
+    #selfMenu #malulHead p {
+        position: relative;
+        right: 11px;
+    }
+
+    #selfMenu #magrashviliHead {
+        right: 212px;
+    }
+
+    #selfMenu #magrashviliHead p {
+        position: relative;
+        right: 37px;
+    }
+
+    #selfMenu #sardalHead {
+        right: 95px;
+    }
+
+    #selfMenu #shaimanHead {
+        left: 60px;
+    }
+
+    #selfMenu #shaimanHead p{
+        position: relative;
+        right: 44px;
+    }
+
+
+
+    /*Third line of players*/
+
+    #selfMenu .third {
+        float: left;
+    }
+
+    #selfMenu .third > .playerHeadThirdLine {
+        position: relative;
+        top: 255px;
+        float: left;
+    }
+
+    #selfMenu .playerHeadThirdLine p {
+        position: relative;
+        font-size: 14px;
+        right: 27px;
+    }
+
+    #selfMenu #maximHead p {
+        right: 42px;
+    }
+
+
+    #selfMenu #barskiHead {
+        left: 136px;
+        position: relative;
+    }
+
+    #selfMenu #MamanHead {
+        left: 240px;
+        position: relative;
+    }
+
+    #selfMenu #shchterHead {
+        left: 362px;
+        position: relative;
+    }
+
+    #selfMenu #CiwanHead {
+        left: 501px;
+        position: relative;
+    }
+
+    #selfMenu #maximHead {
+            left: 647px;
+            position: relative;
+    }
+
+
+
+    /*Fourth line of players*/
+
+    #selfMenu .fourth {
+        float: left;
+    }
+
+
+    #selfMenu .fourth > .playerHeadFourthLine {
+        position: relative;
+        top: 410px;
+        float: left;
+    }
+
+    #selfMenu .playerHeadFourthLine p {
+        position: relative;
+        font-size: 14px;
+        right: 27px;
+    }
+
+    #selfMenu #arelHead p {
+        right: 10px;
+    }
+
+    #selfMenu #arelHead {
+        right: 520px;
+        position: relative;
+    }
+
+    #selfMenu #edanHead {
+        right: 375px;
+        position: relative;
+    }
+
+    #selfMenu #ginsariHead {
+        right: 255px;
+        position: relative;
+    }
+
+    #selfMenu #turjemanHead {
+        right: 110px;
+        position: relative;
+    }
+
+    #selfMenu #lahlaHead {
+            left: 40px;
+            position: relative;
+    }
+
+
+    /*---------------------//MainMenu---------------------*/
+
+
+    /*---------------------NewGame---------------------*/
+
+
+
+    #NewGame header {
+        width: 1300px;      height: 100vh;
+        background-color: #606060;
+    }
+
+
+    #NewGame #logo {
+        width: 340px;    height: 110px;
+        background: url(../images/scoutITLogo.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: relative;
+        top: 45px;left: 515px;
+    }
+
+    header > p {
+        display: inline;
+        color: #ffffff;
+        float: right;
+        position: relative;
+        top: 25px;   right: 100px;
+    }
+
+    #NewGame #reuven {
+        background: url(../images/reuven.png);
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
+        left: 100px;
+        width: 85px;    height: 85px;
+        float: right; 
+    }
+
+
+    .theNav {
+        width: 1300px;  height: 25px;
+        background-color: #606060 !important;
+    }
+
+    #navMainOptions {
+        position: relative;
+        right: 10px;
+    }
+
+    .theNav li {
+        list-style: none;
+        display: inline;
+        position: relative;
+        right: 14px;
+        bottom: 14px;
+    }
+
+    .theNav li a {
+        text-decoration: none;
+        position: relative;
+        top: 15px;
+        padding-left: 50px;
+        padding-right: 35px;
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    #navMainOptions {
+        display: none;
+    }
+
+    .dropDownMenu i {
+        font-size: 22px;
+        position: relative;
+        right: 18px;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        border-radius: 10px;
+        height: 545px;
+
+    }
+
+    .hamburger i{
+        font-size: 32px;
+        position: relative;
+        bottom: 40px;   right: 17px;
+    }
+
+    .dropDownMenu .dropdown-item { 
+        position: relative;
+        width: 250px;   height: 50px;
+        right: 10px;
+        padding-left: 45px;
+        padding-top: 0px;
+        color: #111111;
+    }
+
+    .dropDownMenu a {
+        position: relative;
+    }
+
+    .dropDownMenu .dropdown-item:hover {
+        width: 230px;   height: 48px;
+        background-color: transparent;
+    }
+
+    .dropDownMenu {
+        position: absolute;
+        top: 48px;
+        left: 13px;
+    }
+
+    .dropdown-divider {
+        position: relative;
+    }
+
+    #field {
+        display: none;
+        position: absolute;
+        height: 505px;
+        width: 500px;
+        float: right;
+        left: 227px;
+        top: 0px;
+    }
+
+    #functions {
+        display: none;
+    }
+
+    #icons {
+        display: none;
+    }
+
+    #lists {
+        display: none;
+    }
+
+    #teams-list {
+        display: none;
+    }
+
+    #players-list {
+        display: none;
+    }
+
+    #NewGame main {
+        width: 1300px;  height: 730px;
+        border: none;
+    }
+
+    #notSupportingDesktopMessage {
+        text-align: center;
+        position: relative;
+        top: 150px;
+
+    }
+
+    #teams-list li {
+        position: relative;
+        width: 130px;
+        height: 35px;
+        float: left;
+        bottom: 32px;
+        left: 3px;
+        padding-top: 46px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+
+    h5 {
+        position: relative;
+        height: 5px;
+        width: fit-content;
+        left: 35px;
+        bottom: 23px;
+        }
+
+    /*---------------------//NewGame---------------------*/
+
+
+    /*---------------------contactUs---------------------*/
+
+
+    #theForm {
+        width: 790px;   height: 600px;
+        margin: 0 auto;
+        position: relative;
+        background-color: #ffffff;
+        border: ridge;
+        border-radius: 15px;
+        padding: 30px;
+        top: 20px;
+        /* overflow-y: scroll; */
+
+    }
+
+    form {
+        position: relative;
+        left: 65px; 
+    }
+
+    .form-control {
+        display: inline;
+        width: 180%;
+    }
+
+    form label .formDesign {
+        border: none;
+        border-bottom: solid 1px #a5a1a1;
+        display: inline;
+        height: 45px;
+        width: 600px;
+    }
+
+    #comment {
+        display: block;
+        position: relative;
+        top: 25px;
+        width: 600px;
+    }
+    #theButton {
+        width: 150px;   height: 55px;
+        position: relative;
+        top: 120px;  left: 230px;
+        background-color: #606060;
+        border-color: transparent;
+    }
+
+    #theButton:hover {
+        background-color: #252525;
+    }
+
+    #successMessage {
+        display: none;
+        width: 450px;   height: 200px;
+        position: absolute;
+        top: 300px; right:490px;
+        border: ridge 6px;
+        background-color: #ffffff;
+        text-align: center;
+        padding-top: 15px;
+        
+    }
+
+    #theSuccessButton {
+        position: relative;
+        background-color: #606060;
+        border-color: transparent;
+        top: 130px;
+    }
+
+
+    .swal-button {
+        font-size: 14px;
+        position: relative;
+        }
+
+
+
+
+
+
+
+    /*---------------------matchReport---------------------*/
+
+
+    #matchReport header {
+        width: 1300px;      height: 140px;
+        background-color: #606060;
+    }
+
+    #matchReport #logo {
+        width: 340px;    height: 110px;
+        background: url(../images/scoutITLogo.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: relative;
+        top: 45px;left: 515px;
+    }
+
+    #matchReport header > p {
+        display: inline;
+        color: #ffffff;
+        float: right;
+        position: relative;
+        top: 25px;   right: 100px;
+    }
+    #matchReport #reuven {
+        background: url(../images/reuven.png);
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
+        left: 100px;
+        width: 85px;    height: 85px;
+        float: right;
+    }
+
+    #matchReport main > section {
+        width: 1300px;  height: 700px;
+        background-color: #f7f6f6;
+        border: solid 0.5px;
+        display: block;
+        position: relative;
+        opacity: 1;
+    }
+
+    #matchReport main > section > article > h3 {
+        width: 1150px;
+        padding-top: 37px;
+        padding-bottom: 17px;
+        padding-left: 55px;
+        font-size: 25px;
+        border-bottom: solid 1px;
+        position: relative;
+        left: 50px;
+    }
+
+    #matchReport button {
+        width: 180px;   height: 30px;
+        position: relative;
+        float: right;
+        top: 30px;  right: 70px;
+        border: none;
+        border-radius: 4px;
+        background-color: #d6d6d6;
+        font-family: 'Poppins', sans-serif;
+    }
+
+
+    #theTeams {
+        position: relative;
+        top: 20px;  left: 454px;
+    }
+
+    #theScore {
+        display: inline;
+        position: relative;
+        bottom: 60px;   left: 150px;
+    }
+
+
+    #beitarLogo {
+        position: relative;
+        bottom: 127px;  left: 290px;
+    }
+
+    #gameDate {
+        width: 1150px;    height: 50px;
+        position: relative;
+        bottom: 75px;   left: 65px;
+        border-top: solid 1px;
+        border-bottom: solid 1px;
+        text-align: center;
+        padding-top: 13px;
+    }
+
+    #theReport {
+        width: 1170px;  height: 380px; 
+        position: relative;
+        bottom: 45px;   left: 75px;
+        font-size: 19px;
+        overflow-y: scroll;
+    }
+
+    #theReport ul li {
+        margin-top: 25px;
+        list-style: square;
+    }
+
+    .reportIcon {
+        position: relative;
+        top: 25px;
+        left: 40px;
+        display: inline-block;
+    }
+
+    #matchReport h1 {
+        position: relative;
+        font-size: 17px;
+        width: 1170px;
+        height: 50px;
+        border-bottom: 0.5px solid black;
+        padding-top: 23px;
+        padding-left: 5px;
+        left: 60px;
+    }
+
+    #matchReport main .rContainer {
+        position: relative;
+        left: 100px;
+        text-align: center;
+        width: 1100px;
+        border-bottom: 0.5px solid #000000;
+   }
+
+   .rContainer .theScore {
+       position: relative;
+       right: 2px;;
+   }
+
+   .rContainer .theDate {
+    position: relative;
+    left: 3px;
+}
+
+
+#matchReport main .sContainer {
+    width: 1090px;
+    position: relative;
+    top: 25px;
+    left: 100px;
+}
+
+.sContainer h6 {
+    position: relative;
+    top: 5px;
+    font-weight: bold;
+
+}
+
+ 
+    #matchReport main {
+         overflow-y: scroll;
+    }
+ 
+    .reportContainer{
+        
+        position: relative;
+        left: 60px;
+        width: 1087px;
+        border-bottom: 0.5px solid black;
+        margin-left: 80px;
+    }
+ 
+    #matchReport main .deleteButton {
+        position: absolute;
+        left: 900px;
+        top: 10px;
+        width: 100px;
+        
+        
+    }
+
+
+
+/*---------------------//matchReport---------------------*/
+
+
+
+#leftDetails {
+    width: 450px;  height: 680px;
+    position: relative;
+    top: 50px;
+    border-right: solid 2px #b9bdbd;
+}
+
+#personalDetailsTitle {
+    margin-left: 40px;
+    color: #010052;
+}
+
+#maximPhoto {
+    position: relative;
+    top: 20px;
+    left: 110px;
+}
+
+#maximFields {
+    margin-top: 55px;
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+#maximPrivateAttributes {
+    position: relative;
+    bottom: 184px;
+    left: 210px;
+    font-size: 14px;
+}
+
+#positionsTitle {
+    position: relative;
+    color: #010052;
+    bottom: 145px;
+    margin-left: 40px;
+}
+
+#positionData {
+    position: relative;
+    bottom: 240px;
+    left: 43px;
+    font-size: 14px;
+}
+
+#smallCourtMaxim {
+    position: relative;
+    bottom: 125px;
+    left: 215px;
+}
+
+
+
+
+
+
+
+
+
+
+#rightDetails {
+    width: 890px;  height: 680px;
+    position: relative;
+    bottom: 627px;
+    left: 449px;
+}
+
+#generalStatisticsTitle {
+    margin-left: 30px;
+    color: #010052;
+}
+
+#offeneseStats {
+    width: 305px;   height: 220px;
+    font-size: 12px;
+    border-right: 1px solid #a8a7a7;
+    position: relative;
+    right:15px;
+}
+#offeneseStats .offenseFields {
+    width: 85px;
+    margin-top: 36px;
+    margin-left: 55px;
+    font-size: 12px;
+}
+
+#offeneseStats .offenseNumbers {
+    width: 35px;
+    position: relative;
+    bottom: 165px;
+    left: 170px;
+    font-size: 12px;
+}
+
+#offeneseStats .offenseRank {
+    width: 35px;
+    position: relative;
+    bottom: 370px;
+    left: 230px;
+    font-size: 12px;
+}
+
+
+
+
+#deffenseStats {
+    width: 238px;   height: 220px;
+    font-size: 12px;
+    border-right: 1px solid #a8a7a7;
+    position: absolute;
+    top: 57px;
+    left: 315px;
+    font-size: 12px;
+}
+
+#deffenseStats .deffenseFields {
+    width: 85px;
+    font-size: 12px;
+    margin-top: 1px;
+}
+
+#deffenseStats .deffenseNumbers {
+    width: 55px;
+    position: relative;
+    left: 115px;
+    bottom: 167px;
+    font-size: 12px;
+}
+
+#deffenseStats .deffenseRank {
+    width: 35px;
+    position: relative;
+    bottom: 370px;
+    left: 165px;
+    font-size: 12px;
+}
+
+
+
+
+#setPiecesStats {
+    width: 330px;   height: 220px;
+    font-size: 12px;
+    position: relative;
+    bottom: 250px;
+    left:525px;
+}
+#setPiecesStats .setPiecesFields {
+    width: 150px;
+    margin-top: 35px;
+    margin-left: 55px;
+    font-size: 12px;
+}
+
+#setPiecesStats .setPiecesNumbers {
+    width: 35px;
+    position: relative;
+    bottom: 165px;
+    left: 210px;
+    font-size: 12px;
+}
+
+#setPiecesStats .setPiecesRank {
+    width: 35px;
+    position: relative;
+    bottom: 372px;
+    left: 258px;
+    font-size: 12px;
+}
+
+
+.rankTitle {
+    color: #979191;
+}
+
+.green {
+    color: #2b8807;
+}
+
+.blue {
+    color: #2220af;
+}
+
+.red {
+    color: #a10c0c;
+}
+
+
+
+#gpsDataTitle {
+    color: #010052;
+    position: relative;
+    bottom: 160px;
+    margin-left: 17px;
+}
+
+
+#heatMap {
+    position: relative;
+    bottom: 115px;
+    left: 60px;
+}
+
+
+#gpsData {
+    width: 300px;   height:225px;
+    position: relative;
+    float: left;
+    bottom: 60px;
+    left: 20px;
+}
+
+#gpsFields {
+    width: 190px;   height: 225px;
+    display: block;
+    position: relative;
+    bottom: 320px;
+    left: 470px;
+    
+    font-size: 15px;
+}
+
+#gpsNumbers {
+    width: 90px;   height: 225px;
+    display: block;
+    position: relative;
+    bottom: 545px;
+    left: 490px;
+    float: right;
+    font-size: 15px;
+
+}
+/*---------------------//PlauerPage---------------------*/
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------TABLET STARTING HERE------------------------------*/
+
+
+
+@media screen and (min-width: 100px) and (max-width: 1037px) {
+* {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    header, main, nav, aside, article, section, footer {
+        display: block;
+    }
+
+    #wrapper {
+        width: 1024px;
+        margin: 0px auto;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+
+
+
+    /*---------------------INDEX---------------------*/
+
+    #index header {
+        width: 1024px;      height: 140px;
+        background-color: #606060;
+    }
+
+    #index #logo {
+        width: 95px;    height: 80px;
+        background: url(../images/logo.svg);
+        background-repeat: no-repeat;
+        display: inline-block;
+
+
+    }
+
+    #index header > p {
+        display: inline;
+        color: #ffffff;
+        float: right;
+        position: relative;
+        top: 25px;   right: 100px;
+    }
+    #index #reuven {
+        background: url(../images/reuven.png);
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
+        width: 85px;    height: 85px;
+        float: right;
+        left: 100px;
+    }
+
+    #index main > section {
+        height: 560px;
+        border: solid 0.5px;
+        background: url(../images/background.svg);
+        background-repeat: no-repeat;
+        display: block;
+        opacity: 0.75;
+    }
+
+    #index #self, #index #rival {
+        width: 390px;   height: 71px;
+        position: relative;
+        left: 320px;
+        border-radius: 7px;
+        background-color: #111111;
+        text-align: center;
+        color: #ffffff;
+        padding-top: 20px;
+        padding-left: 10px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+    }
+
+    /* too long */
+    #index main > section >  article > a{   
+        text-decoration: none;
+        color: #d6dbda;
+    }
+
+    #index #self{
+        top: 225px; 
+    }
+
+    #index #rival{
+        top: 250px;
+    }
+
+    /*---------------------//INDEX---------------------*/
+
+
+    /*---------------------MainMenu---------------------*/
+
+    #selfMenu header {
+        width: 1024px;      height: 140px;
+        background-color: #606060;
+    }
+
+    #selfMenu #logo {
+        width: 95px;    height: 80px;
+        background: url(../images/logo.svg);
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+
+    #selfMenu header > p {
+        display: inline;
+        color: #ffffff;
+        float: right;
+        position: relative;
+        top: 25px;   right: 100px;
+    }
+    #selfMenu #reuven {
+        background: url(../images/reuven.png);
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
+        left: 100px;
+        width: 85px;    height: 85px;
+        float: right;
+    }
+
+
+    .theNav {
+        width: 1024px;  height: 45px;
+        background-color: #606060 !important;
+    }
+
+    #navMainOptions {
+        position: relative;
+        right: 10px;
+    }
+
+    .theNav li {
+        list-style: none;
+        display: inline;
+        position: relative;
+        right: 14px;
+        bottom: 14px;
+    }
+
+    .theNav li a {
+        text-decoration: none;
+        position: relative;
+        top: 15px;
+        padding-left: 50px;
+        padding-right: 35px;
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    .dropDownMenu i {
+        font-size: 22px;
+        position: relative;
+        right: 18px;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        border-radius: 10px;
+        height: 545px;
+
+    }
+
+    .hamburger i{
+        font-size: 32px;
+        position: relative;
+        right: 17px;
+    }
+
+    .dropDownMenu .dropdown-item { 
+        position: relative;
+        width: 250px;   height: 50px;
+        right: 10px;
+        padding-left: 45px;
+        padding-top: 0px;
+        color: #111111;
+    }
+
+    .dropDownMenu a {
+        position: relative;
+    }
+
+    .dropDownMenu .dropdown-item:hover {
+        width: 230px;   height: 48px;
+        background-color: transparent;
+    }
+
+    .dropDownMenu {
+        position: absolute;
+        top: 48px;
+        left: 13px;
+    }
+
+    .dropdown-divider {
+        position: relative;
+    }
+
+    #selfMenu main > section {
+        height: 560px;
+        background-color: #f7f6f6;
+        border: solid 0.5px;
+        display: block;
+        position: relative;
+        opacity: 1;
+    }
+
+    #selfMenu main > section > article > h3 {
+        width: 890px;
+        padding-top: 29px;
+        padding-bottom: 7px;
+        padding-left: 55px;
+        font-size: 25px;
+        border-bottom: solid 1px;
+        position: relative;
+        left: 50px;
+    }
+
+
+
+    /*First line of players*/
+
+    #selfMenu .playerHeadFirstLine {
+        position: relative;
+        top: 12px;
+        float: left;
+    }
+
+    #selfMenu  .playerHeadFirstLine p {
+        position: relative;
+        font-size: 14px;
+        right: 27px;
+    }
+
+    #selfMenu #kadoshHead {
+        left: 100px;
+    }
+
+    #selfMenu #setkusHead {
+        left: 170px;
+    }
+
+    #selfMenu #tamasHead {
+        left: 230px;
+    }
+
+    #selfMenu #resmusHead {
+        left: 290px;
+    }
+
+    #selfMenu #kapilotoHead {
+        left: 350px;
+    }
+
+
+
+    /*Second line of players*/
+
+    #selfMenu .second {
+        float: left;
+    }
+
+
+    #selfMenu .second > .playerHeadSecondLine {
+        position: relative;
+        top: 30px;
+        font-size: 14px;    float: left;
+    }
+
+    #selfMenu .playerHeadSecondLine p {
+        position: relative;
+        right: 27px;
+    }
+
+
+    #selfMenu #fishlerHead {
+        left: 102px;
+    }
+
+    #selfMenu #malulHead {
+        left: 175px;
+    }
+
+    #selfMenu #malulHead p {
+        position: relative;
+        right: 9px;
+    }
+
+    #selfMenu #magrashviliHead {
+        left: 282px;
+    }
+
+    #selfMenu #magrashviliHead p {
+        position: relative;
+        right: 32px;
+    }
+
+    #selfMenu #sardalHead {
+        left: 335px;
+    }
+
+    #selfMenu #shaimanHead {
+            left: 418px;
+    }
+
+    #selfMenu #shaimanHead p {
+        position: relative;
+        right: 44px;
+    }
+
+
+    /*Third line of players*/
+
+    #selfMenu .third {
+        float: left;
+    }
+
+
+    #selfMenu .third > .playerHeadThirdLine {
+        position: relative;
+        top: 55px;
+        float: left;
+    }
+
+    #selfMenu .playerHeadThirdLine p {
+        position: relative;
+        font-size: 14px;
+        right: 27px;
+    }
+
+    #selfMenu #maximHead p {
+        right: 39px;
+    }
+
+
+    #selfMenu #barskiHead {
+        left: 105px;
+        position: relative;
+    }
+
+    #selfMenu #MamanHead {
+        left: 157px;
+        position: relative;
+    }
+
+    #selfMenu #shchterHead {
+        left: 227px;
+        position: relative;
+    }
+
+    #selfMenu #CiwanHead {
+        left: 290px;
+        position: relative;
+    }
+
+    #selfMenu #maximHead {
+            position: relative;
+            left: 360px;
+
+    }
+
+    #selfMenu #maximHead p{
+        position: relative;
+        right: 51px;
+    }
+
+
+
+
+
+
+    /*Fourth line of players*/
+
+    #selfMenu .fourth {
+        float: left;
+    }
+
+
+    #selfMenu .fourth > .playerHeadFourthLine {
+        top: 70px;
+        float: left;
+    }
+
+    #selfMenu .playerHeadFourthLine p {
+        position: relative;
+        position: relative;
+        font-size: 14px;
+        right: 27px;
+    }
+
+    #selfMenu #arelHead p {
+        right: 10px;
+    }
+
+    #selfMenu #arelHead {
+        left: 107px;
+        position: relative;
+    }
+
+    #selfMenu #edanHead {
+        left: 202px;
+        position: relative;
+    }
+
+    #selfMenu #edanHead p {
+        position: relative;
+        right: 40px;
+    }
+
+
+    #selfMenu #ginsariHead {
+        left: 268px;
+        position: relative;
+    }
+
+    #selfMenu #turjemanHead {
+        left: 342px;
+        position: relative;
+    }
+
+    #selfMenu #lahlaHead {
+            left: 408px;
+            position: relative;
+
+    }
+
+
+    /*---------------------//MainMenu---------------------*/
+
+
+
+    /*---------------------contactUs---------------------*/
+
+
+    #theForm {
+        width: 590px;   height: 450px;
+        margin: 0 auto;
+        position: relative;
+        background-color: #ffffff;
+        border: ridge;
+        border-radius: 15px;
+        padding: 30px;
+        top: 10px;
+    }
+
+    form {
+        position: relative;
+        left: 100px;
+    }
+
+    .form-control {
+        display: inline;
+    }
+
+    form label .formDesign {
+        border: none;
+        border-bottom: solid 1px #a5a1a1;
+        display: inline;
+        height: 35px;
+        width: 350px;
+        position: relative;
+        left: 74px
+    }
+
+    #comment {
+        display: block;
+    }
+    #theButton {
+        position: relative;
+        top: 50px;  left: 130px;
+        background-color: #606060;
+        border-color: transparent;
+    }
+
+    #theButton:hover {
+        background-color: #252525;
+    }
+
+    #successMessage {
+        display: none;
+        width: 450px;   height: 200px;
+        position: absolute;
+        top: 300px; right:490px;
+        border: ridge 6px;
+        background-color: #ffffff;
+        text-align: center;
+        padding-top: 15px;
+        
+    }
+
+    #theSuccessButton {
+        position: relative;
+        background-color: #606060;
+        border-color: transparent;
+        top: 30px;
+    }
+        
+        
+    .swal-button {
+        font-size: 14px;
+        position: relative;
+        }
+
+        button {
+        border: none;
+        align-content: center;
+    }
+
+
+
+    /*---------------------//contactUs---------------------*/
+
+    #playerDetails{
+        height: 300px;
+         overflow-y: scroll;
+    }
+    
+    #leftDetails {
+        width: 450px;
+        position: relative;
+        top: 50px;
+        border-right: solid 2px #b9bdbd;
+    
+    }
+    
+    #personalDetailsTitle {
+        margin-left: 40px;
+        color: #010052;
+    }
+    
+    #maximPhoto {
+        position: relative;
+        top: 20px;
+        left: 110px;
+    }
+    
+    #maximFields {
+        margin-top: 55px;
+        margin-left: 60px;
+        font-size: 14px;
+    }
+    
+    #maximPrivateAttributes {
+        position: relative;
+        bottom: 184px;
+        left: 230px;
+        font-size: 14px;
+    }
+    
+    #positionsTitle {
+        position: relative;
+        color: #010052;
+        bottom: 35px;
+        left: 40px;
+    }
+    
+    #positionData {
+        position: relative;
+        top: 25px;
+        left: 170px;
+        font-size: 14px;
+    }
+    
+    
+    #smallCourtMaxim {
+        position: relative;
+        bottom: 10px;
+        left: 130px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #rightDetails {
+        width: 450px;  height: fit-content;
+        position: relative;
+        bottom: 777px;
+        left: 449px;
+    }
+    
+    #generalStatisticsTitle {
+        margin-left: 40px;
+        color: #010052;
+    }
+    
+    #offeneseStats {
+        width: 305px;   height: 220px;
+        font-size: 12px;
+        border-right: 1px solid #a8a7a7;
+        position: relative;
+        bottom: 16px;
+        right:15px;
+    }
+    #offeneseStats .offenseFields {
+        width: 85px;
+        margin-top: 36px;
+        margin-left: 55px;
+        font-size: 12px;
+    }
+    
+    #offeneseStats .offenseNumbers {
+        width: 35px;
+        position: relative;
+        bottom: 165px;
+        left: 170px;
+        font-size: 12px;
+    }
+    
+    #offeneseStats .offenseRank {
+        width: 35px;
+        position: relative;
+        bottom: 370px;
+        left: 230px;
+        font-size: 12px;
+    }
+    
+    
+    
+    
+    #deffenseStats {
+        width: 238px;   height: 220px;
+        font-size: 12px;
+        position: absolute;
+        top: 41px;
+        left: 330px;
+        font-size: 12px;
+    }
+    
+    #deffenseStats .deffenseFields {
+        width: 85px;
+        font-size: 12px;
+        margin-top: 1px;
+    }
+    
+    #deffenseStats .deffenseNumbers {
+        width: 55px;
+        position: relative;
+        left: 115px;
+        bottom: 167px;
+        font-size: 12px;
+    }
+    
+    #deffenseStats .deffenseRank {
+        width: 35px;
+        position: relative;
+        bottom: 370px;
+        left: 165px;
+        font-size: 12px;
+    }
+    
+    
+    
+    
+    #setPiecesStats {
+        width: 330px;   height: 17px;
+        font-size: 12px;
+        position: relative;
+        bottom: 19px;
+        left:125px;
+        border-top: 1px solid #a8a7a7;
+    }
+    #setPiecesStats .setPiecesFields {
+        width: 145px;
+        margin-top: 35px;
+        margin-left: 55px;
+        font-size: 12px;
+    }
+    
+    #setPiecesStats .setPiecesNumbers {
+        width: 35px;
+        position: relative;
+        bottom: 172px;
+        left: 213px;
+        font-size: 12px;
+    }
+    
+    #setPiecesStats .setPiecesRank {
+        width: 35px;
+        position: relative;
+        bottom: 378px;
+        left: 275px;
+        font-size: 12px;
+    }
+    
+    
+    .rankTitle {
+        color: #979191;
+    }
+    
+    .green {
+        color: #2b8807;
+    }
+    
+    .blue {
+        color: #2220af;
+    }
+    
+    .red {
+        color: #a10c0c;
+    }
+    
+    
+    
+    #gpsDataTitle {
+        color: #010052;
+        position: relative;
+        bottom: 160px;
+        margin-left: 40px;
+    }
+    
+    
+    #heatMap {
+        position: relative;
+        bottom: 130px;
+        left: 110px;
+    }
+    
+    
+    
+    
+    
+    #gpsData {
+        width: 300px;   height:225px;
+        position: relative;
+        float: left;
+        top: 435px;
+    }
+    
+    #gpsFields {
+        width: 180px;   height: 225px;
+        display: inline-block;
+        float: left;
+        position: relative;
+        bottom: 70px;
+        left: 120px;
+        font-size: 15px;
+    }
+    
+    #gpsNumbers {
+        width: 90px;   height: 225px;
+        display: inline;
+        float: right;
+        position: relative;
+        bottom: 68px;
+        left: 160px;
+        font-size: 15px;
+    
+    }
+    
+    
+    /*---------------------//PlauerPage---------------------*/
+
+
+    /*---------------------NewGame---------------------*/
+
+    #NewGame header {
+        width: 1024px;      height: 140px;
+        background-color: #606060;
+    }
+
+    #NewGame #logo {
+        width: 95px;    height: 80px;
+        background: url(../images/logo.svg);
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+
+    #NewGame header > p {
+        display: inline;
+        color: #ffffff;
+        float: right;
+        position: relative;
+        top: 25px;   right: 100px;
+    }
+    #NewGame #reuven {
+        background: url(../images/reuven.png);
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
+        left: 100px;
+        width: 85px;    height: 85px;
+        float: right;
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+    }
+
+    button:focus {outline:0;}
+
+
+    main {
+        position: relative;
+        height: 100%;
+        border: black solid 1px;
+        width: 1024px;  height: 560px;
+    }
+
+    #field {
+
+        position: absolute;
+        height: 505px;
+        width: 500px;
+        float: right;
+        left: 229px;
+        top: 0px;
+
+    }
+
+    #functions {
+        width: 227px;       height: 555px;
+        background-color: #f7f6f6;
+
+    }
+
+
+    .stopWatch {
+        height: 90px;
+        border-bottom: black solid 0.5px;
+        text-align: center;
+    }
+
+    .stopWatch h1 {
+        font-size: 18px;
+        margin-top: 3px
+    }
+
+    .stopWatch h2 {
+        font-size: 18px;
+    }
+
+    .myButton {
+        padding-top: 4px;
+        background-color: transparent;
+        border: none;
+        }
+
+        .myButton i {
+        font-size: 20px;        
+        }
+
+        button {
+        border: none;
+        align-content: center;
+    }
+
+
+    ul {
+        position: relative;
+        list-style-type: none;
+    }
+
+
+
+    #icons {
+        width: 84px;
+        height: 465px;
+        border-right: black solid 0.1px;
+        float: left;
+
+    }
+
+    #icons h4 {
+        position: relative;
+        font-size: 11.5px;
+        top: 5px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .iconsList {
+        position: relative;
+        bottom: 20px;
+        padding-top: 26px;
+        background-color: transparent;
+        border: none;
+        font-size: 31px;
+    }
+
+
+
+    #lists {
+        position: absolute;
+        width: 140px;
+        height: 459px;
+        left: 84px;
+        font-size: 10px;
+    }
+
+
+
+    #teams-list li {
+        position: relative;
+        float: left;
+        left: 3px;
+        width: 180px;
+        height: 25px; 
+        margin-top: 20px;
+        font-size: 12px;
+        font-family: 'Poppins', sans-serif;
+        
+    }
+
+    #teams-list {
+        overflow-y: scroll;
+    }
+
+        .iconsList {
+            position: relative;
+            padding-top:28px;
+            background-color: transparent;
+            border: none;
+        }
+
+        button {
+            border: none;
+            align-content: center;
+        }
+
+    #icons h4 {
+        position: relative;
+        font-size: 11.5px;
+        top: 5px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .fa-futbol-o {
+        position: relative;
+        left: 10px;
+    }
+    .fa-braille {
+        position: relative;
+        left: 14px;
+    }
+    .fa-male {
+        position: relative;
+        left: 21px;
+    }
+    .fa-exchange-alt {
+        position: relative;
+        left: 11px;
+    }
+    .fa-comment {
+        position: relative;
+        left: 12px;
+    }
+    .fa-pencil-alt {
+        position: relative;
+        left: 12px;
+    }
+
+
+    #formation-list {
+        height: 465px;
+        overflow-y: scroll;
+        display: none;
+        width: 130px;
+        margin-top: 1px;
+        margin-left: 10px;
+        font-size: 14px;
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #formation-list li{
+        margin-top: 18px;
+
+    }
+
+    #formation-list h6 {
+        width: 130px;
+        height: 10px;
+        margin-top: 23px;
+        margin-left: 10px;
+        font-size: 11.5px;
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #players-list {
+        height: 465px;
+        width: 149px;
+        overflow-y: scroll;
+        list-style: none;
+        position: relative;
+        bottom: 0px;
+        left: -8px;
+        font-size: 10px;
+    }
+
+    #players-list .fill{
+        position: relative;
+        left: 14px;
+        padding-top: 17px;
+    }
+
+    .largeFace{
+        width: 100%;
+        height: 100%;
+    }
+
+    #players-list img {
+        height: 37%; width: 37%;
+        position: relative;
+        padding-right: 20px;
+        top: -8px;
+    }
+
+    #players-list h5 {
+        position: relative;
+        left: 47px;
+        font-size: 11.5px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+
+    #personalComments {
+        width: 140px;   height: 459px;
+        overflow-y: scroll;
+    }
+
+    #personalComments ul li {
+        font-size: 16px;
+        padding-top: 15px;
+        padding-left: 3px;
+    }
+
+    #empty {
+        width: 20px;    height: 20px;
+        border: solid 2px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    #full {
+        width: 20px;    height: 20px;
+        border: solid 2px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    form{
+        font-size: 13px;
+    }
+
+    form label {
+        position: relative;
+        right: 93px;
+    }
+
+
+    /*TeanFormations..*/
+
+    /*-4-3-3-*/
+
+    #formation4_3_3 {
+        display: none;
+    }
+
+    #formation4_3_3 .empty {
+        height: 60px; width: 60px;
+        background-color: #d6d6d6;
+        border-radius: 50%;
+        border: #000000 0.5px solid;
+        position: absolute;
+    }
+
+    #formation4_3_3 .fieldPlayer0 {
+        display: block;
+        top: 250px; left: 15px;
+    }
+
+    #formation4_3_3 .fieldPlayer1 {
+        display: block;
+        top: 60px;  left: 170px
+    }
+
+    #formation4_3_3 .fieldPlayer2 {
+        display: block;
+        top: 160px;  left: 120px
+    }
+
+    #formation4_3_3 .fieldPlayer3 {
+        display: block;
+        top: 330px;  left: 120px
+    }
+
+    #formation4_3_3 .fieldPlayer4 {
+        display: block;
+        top: 445px;  left: 170px
+    }
+
+
+
+    #formation4_3_3 .fieldPlayer5 {
+        display: block;
+        top: 120px;  left: 370px
+    }
+
+    #formation4_3_3 .fieldPlayer6 {
+        display: block;
+        top: 250px;  left: 310px
+    }
+
+    #formation4_3_3 .fieldPlayer7 {
+        display: block;
+        top: 380px;  left: 370px
+    }
+
+
+
+    #formation4_3_3 .fieldPlayer8 {
+        display: block;
+        top: 130px;  left: 590px;
+    }
+
+    #formation4_3_3 .fieldPlayer9 {
+        display: block;
+        top: 255px;  left: 645px;
+    }
+
+    #formation4_3_3 .fieldPlayerA {
+        display: block;
+        top: 380px;  left: 590px
+
+    }
+
+    .hold {
+        border: solid black 0.5 px;
+    }
+
+    .hovered {
+        background-color: #f4f4f4;
+    }
+
+
+
+    /*GAME_ON.....*/
+
+    #gameOn4_3_3 article {
+        height: 60px; width: 60px;
+        background-color: #8b8a8a;
+        border-radius: 50%;
+        border: #000000 0.5px solid;
+        position: absolute;
+        display: block;
+        font-size:26px;
+        color: #dfdede;
+        padding-top: 8px;
+        padding-left: 3px;
+    }
+
+
+
+    #gameOn4_3_3 .goalKeeper {
+        display: block;
+        top: 250px; left: 15px;
+        padding-left: 10px;
+    }
+
+    #gameOn4_3_3 .fieldPlayer1 {
+        display: block;
+        top: 60px;  left: 170px
+    }
+
+    #gameOn4_3_3 .fieldPlayer2 {
+        display: block;
+        top: 160px;  left: 120px
+
+    }
+
+    #gameOn4_3_3 .fieldPlayer3 {
+        display: block;
+        top: 330px;  left: 120px
+    }
+
+    #gameOn4_3_3 .fieldPlayer4 {
+        display: block;
+        top: 445px;  left: 170px
+    }
+
+
+
+    #gameOn4_3_3 .fieldPlayer5 {
+        display: block;
+        top: 120px;  left: 370px
+    }
+
+    #gameOn4_3_3 .fieldPlayer6 {
+        display: block;
+        top: 250px;  left: 310px
+    }
+
+    #gameOn4_3_3 .fieldPlayer7 {
+        display: block;
+        top: 380px;  left: 370px
+    }
+
+
+
+    #gameOn4_3_3 .fieldPlayer8 {
+        display: block;
+        top: 130px;  left: 590px;
+    }
+
+    #gameOn4_3_3 .fieldPlayer9 {
+        display: block;
+        top: 255px;  left: 645px;
+    }
+
+    #gameOn4_3_3 .fieldPlayer10 {
+        display: block;
+        top: 380px;  left: 590px
+    }
+
+
+
+    /*-3-5-2-*/
+
+    #formation3_5_2 {
+        display: none;
+    }
+
+    #formation3_5_2 article {
+        height: 60px; width: 60px;
+        background-color: #d6d6d6;
+        border-radius: 50%;
+        border: #000000 0.5px solid;
+        position: absolute;
+    }
+
+    #formation3_5_2 .goalKeeper {
+        bottom: 200px; left: 15px;
+    }
+
+    #formation3_5_2 .fieldPlayer1 {
+        bottom: 310px;  left: 140px
+    }
+
+    #formation3_5_2 .fieldPlayer2 {
+        bottom: 200px;  left: 120px
+    }
+
+    #formation3_5_2 .fieldPlayer3 {
+        bottom: 80px;  left: 140px
+    }
+
+
+    #formation3_5_2 .fieldPlayer4 {
+        bottom: 400px;  left: 340px
+    }
+
+    #formation3_5_2 .fieldPlayer5 {
+        bottom: 250px;  left: 280px
+    }
+
+    #formation3_5_2 .fieldPlayer6 {
+        bottom: 120px;  left: 280px
+    }
+
+    #formation3_5_2 .fieldPlayer7 {
+        bottom: 190px;  left: 380px
+    }
+
+    #formation3_5_2 .fieldPlayer8 {
+        top: 450px;  left: 340px;
+    }
+
+
+
+
+    #formation3_5_2 .fieldPlayer9 {
+        bottom: 70px;  left: 525px;
+    }
+
+    #formation3_5_2 .fieldPlayer10 {
+        bottom: 290px;  left: 525px
+    } 
+
+
+
+        #formation4-3-3 div > img {
+        width: 100%;    height: 100%;
+    }
+        
+    #formation3-5-2 div > img {
+        width: 100%;    height: 100%;
+    }
+
+
+    #notSupportingDesktopMessage {
+        display: none;
+    }
+
+
+    #commentsBox {
+        display: none;
+        width: 675px;
+        height:440px;
+        background-color: #ffffff;
+        opacity: 0.85;
+        position: absolute;
+        bottom: 50px;
+        left: 205px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+
+
+    #commentsBox h4 {
+        position: relative;
+        top: 12px;
+        right: 80px;
+    }
+
+    #HhapoelScore {
+        position: relative;
+        top: 10px;
+        left: 100px;
+        font-size: 18px;
+    }
+
+    #hapoelScore {
+        position: relative;
+        top: 5px;
+        left: 37px;
+    }
+
+    #HrivalScore {
+        position: relative;
+        top: 10px;
+        left: 145px;
+        font-size: 18px;
+    }
+
+    #rivalScore {
+        position: relative;
+        top: 5px;
+        left: 24px;
+    }
+
+
+    #Hcorners {
+        position: relative;
+        top: 110px;
+        right: 150px;
+        font-size: 18px;
+    }
+
+    #corners  {
+        position: relative;
+        top: 5px;
+        left: 15px;
+    }
+
+    #Hoffsides {
+        position: relative;
+        top: 110px;
+        right: 91px;
+        font-size: 18px;
+    }
+
+    #offsides  {
+        position: relative;
+        top: 5px;
+        left: 15px;
+    }
+
+
+    #Hpenalties {
+        position: relative;
+        top: 110px;
+        right: 30px;
+        font-size: 18px;
+    }
+
+    #penalties  {
+        position: relative;
+        top: 5px;
+        left: 19px;
+    }
+
+    #Hcomments  {
+        position: relative;
+        top: 150px;
+        left: 11px;
+    }
+
+
+
+    /*---------------------//NewGame---------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*---------------------matchReport---------------------*/
+
+
+    #matchReport header {
+        width: 1024px;      height: 140px;
+        background-color: #606060;
+    }
+
+    #matchReport #logo {
+        width: 95px;    height: 80px;
+        background: url(../images/logo.svg);
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+
+    #matchReport header > p {
+        display: inline;
+        color: #ffffff;
+        float: right;
+        position: relative;
+        top: 25px;   right: 100px;
+    }
+    #matchReport #reuven {
+        background: url(../images/reuven.png);
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
+        left: 100px;
+        width: 85px;    height: 85px;
+        float: right;
+    }
+
+    #matchReport main > section {
+        height: 560px;
+        background-color: #f7f6f6;
+        border: solid 0.5px;
+        display: block;
+        position: relative;
+        opacity: 1;
+    }
+
+    #matchReport main > section > article > h3 {
+        width: 890px;
+        padding-top: 29px;
+        padding-bottom: 7px;
+        padding-left: 55px;
+        font-size: 25px;
+        border-bottom: solid 1px;
+        position: relative;
+        left: 50px;
+    }
+
+    #matchReport button {
+        width: 180px;   height: 30px;
+        position: relative;
+        float: right;
+        top: 20px;  right: 70px;
+        border: none;
+        border-radius: 4px;
+        background-color: #d6d6d6;
+        font-family: 'Poppins', sans-serif;
+    }
+
+
+    #theTeams {
+        position: relative;
+        top: 20px;  left: 330px;
+    }
+
+    #theScore {
+        display: inline;
+        position: relative;
+        bottom: 60px;   left: 150px;
+    }
+
+
+    #beitarLogo {
+        position: relative;
+        bottom: 127px;  left: 290px;
+    }
+
+    gameDate {
+        width: 888px;    height: 50px;
+        position: relative;
+        bottom: 85px;   left: 65px;
+        border-top: solid 1px;
+        border-bottom: solid 1px;
+        text-align: center;
+        padding-top: 13px;
+    }
+
+    #theReport {
+        width: 900px;  height: 280px; 
+        position: relative;
+        bottom: 65px;   left: 75px;
+        font-size: 19px;
+        overflow-y: scroll;
+    }
+
+    #theReport ul li {
+        margin-top: 25px;
+        list-style: square
+    }
+        
+    #submit {
+        position: absolute;
+        top: 403px;
+        right: 415px;
+        border: solid #000000 1px;
+        border-radius: 3px;
+        height: 25px;
+        width: 50px;
+    }
+
+    .reportIcon {
+       position: relative;
+       top: 25px;
+       left: 40px;
+       display: inline-block;
+   }
+
+   #matchReport h1 {
+       position: relative;
+       font-size: 17px;
+       width: 920px;
+       height: 50px;
+       border-bottom: 0.5px solid black;
+       padding-top: 23px;
+       padding-left: 5px;
+       left: 60px;
+   }
+
+   #matchReport main {
+        overflow-y: scroll;
+   }
+
+   .reportContainer{
+       
+       position: relative;
+       left: 60px;
+       width: 840px;
+       border-bottom: 0.5px solid black;
+       margin-left: 80px;
+   }
+
+   #matchReport main .deleteButton {
+       position: absolute;
+       left: 700px;
+       top: 10px;
+       width: 100px;
+       
+       
+   }
+   #matchReport main .rContainer {
+    position: relative;
+    left: 100px;
+    text-align: center;
+    width: 850px;
+    border-bottom: 0.5px solid #000000;
+}
+
+.rContainer .theScore {
+    position: relative;
+    right: 2px;;
+}
+
+.rContainer .theDate {
+position: relative;
+left: 3px;
+}
+
+
+#matchReport main .sContainer {
+    width: 820px;
+    position: relative;
+    top: 25px;
+    left: 100px;
+}
+
+.sContainer h6 {
+    position: relative;
+    top: 5px;
+    font-weight: bold;
+
+}
+
+
+
+/*---------------------//matchReport---------------------*/
+
+}

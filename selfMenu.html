@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="includes/style.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+    <title>selfMenu</title>
+</head>
+    <body>
+        <div id="wrapper">
+            <section id="selfMenu">
+                <header>
+                    <p>Hello Reuven!</p>
+                    <a id="logo"  href="index.html"></a>
+                    <article id="reuven"></article>      
+
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light theNav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link hamburger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                            <div class="dropdown-menu dropDownMenu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item first" href="newGame.php"><i class="far fa-futbol"></i>New Game</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="reports.php"><i class="fas fa-arrow-left"></i>Previous Games</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="fab fa-stack-exchange"></i>Statistics</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="far fa-chart-bar"></i>Player Analysis</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="fas fa-table"></i>League Table</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="fas fa-cog"></i>Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="contactUs.html"><i class="fas fa-phone"></i>Contact Us</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item logout" href="#"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                            </div>
+                        </li>
+                        <div id="navMainOptions">
+                            <li><a href="newGame.php">New Game</a></li>
+                            <li><a href="reports.php">Previous Games</a></li>
+                            <li><a href="#">Statistics</a></li>
+                            <li><a href="#">Player Analysis</a></li>            
+                        </div>
+                    </nav>
+                </header>
+
+                <main>
+                    <section>
+                        <article>
+                            <h3>FC Hapoel Haifa</h3>
+                        </article>
+                        
+                        <article class="playerHeadFirstLine" id="kadoshHead">
+                            <a href="#"><img src="images/playersProfile/kadoshHead.png"></a>
+                            <p>#1 Ran Kadosh </p>
+                        </article>
+                        <article class="playerHeadFirstLine" id="setkusHead">
+                            <a href="#"><img src="images/playersProfile/setkusHead.png"></a>
+                            <p>#13 Ernestas Setkus </p>
+                        </article>
+                        <article class="playerHeadFirstLine" id="tamasHead">
+                            <a href="#"><img src="images/playersProfile/tamasHead.png"></a>
+                            <p>#30 Gabriel Tamas</p>
+                        </article>
+                        <article class="playerHeadFirstLine" id="resmusHead">
+                            <a href="#"><img src="images/playersProfile/resmusHead.png"></a>                      
+                            <p>#2 Resmus Sjostedt</p>
+                        </article>
+                        <article class="playerHeadFirstLine" id="kapilotoHead">
+                            <a href="#"><img src="images/playersProfile/kapilotoHead.png"></a>
+                            <p>#55 Nisso Kapiloto</p>
+                        </article>
+
+
+                        <!-- Do the fist line as same as the second line (div class..)  -->
+                        <div class="second">
+                            <article class="playerHeadSecondLine" id="fishlerHead">
+                                <a href="#"><img src="images/playersProfile/resmusHead.png"></a>
+                                <p>#5 Ofek Fishler </p>
+                            </article>
+                            <article class="playerHeadSecondLine" id="malulHead">
+                                <a href="#"><img src="images/playersProfile/malulHead.png"></a>
+                                <p>#4 Dor Malul </p>
+                            </article>
+                            <article class="playerHeadSecondLine" id="magrashviliHead">
+                                <a href="#"><img src="images/playersProfile/magrashviHead.png"></a>
+                                <p>#3 Haim Magrashvili</p>
+                            </article>
+                            <article class="playerHeadSecondLine" id="sardalHead">
+                                <a href="#"><img src="images/playersProfile/sardalHead.png"></a>
+                                <p>#24 Liran Sardal </p>
+                            </article>
+                            <article class="playerHeadSecondLine" id="shaimanHead">
+                                <a href="#"><img src="images/playersProfile/shaimanHead.png"></a>
+                                <p>#18 Shmuel Shaiman</p>
+                            </article>    
+                        </div>
+
+
+                        <div class="third">
+                            <article class="playerHeadThirdLine" id="barskiHead">
+                                <a href="#"><img src="images/playersProfile/barskiHead.png"></a>
+                                <p>#77 Roslan Barski </p>
+                            </article>
+                            <article class="playerHeadThirdLine" id="MamanHead">
+                                <a href="#"><img src="images/playersProfile/mamanHead.png"></a>
+                                <p>#15 Hanan Maman </p>
+                            </article>
+                            <article class="playerHeadThirdLine" id="shchterHead">
+                                <a href="#"><img src="images/playersProfile/shchterHead.png"></a>
+                                <p>#12 Aner Shechter</p>
+                            </article>
+                            <article class="playerHeadThirdLine" id="CiwanHead">
+                                <a href="#"><img src="images/playersProfile/ciwanHead.png"></a>
+                                <p>#8 Hisham Ciwan </p>
+                            </article>
+                            <article class="playerHeadThirdLine" id="maximHead">
+                                <a href="playerPage.html"><img src="images/playersProfile/maximHead.png"></a>
+                                <p>#7 Maxim Flakuchenko</p>
+                            </article>    
+                        </div>
+
+
+                        <div class="fourth">
+                            <article class="playerHeadFourthLine" id="arelHead">
+                                <a href="#"><img src="images/playersProfile/arelHead.png"></a>
+                                <p>#6 Gal Arel </p>
+                            </article>
+                            <article class="playerHeadFourthLine" id="edanHead">
+                                <a href="#"><img src="images/playersProfile/edenHead.png"></a>
+                                <p>#9 Eden Ben-Basat </p>
+                            </article>
+                            <article class="playerHeadFourthLine" id="ginsariHead">
+                                <a href="#"><img src="images/playersProfile/ginsariHead.png"></a>
+                                <p>#14 Radu Ginsari</p>
+                            </article>
+                            <article class="playerHeadFourthLine" id="turjemanHead">
+                                <a href="#"><img src="images/playersProfile/turjemanHead.png"></a>
+                                <p>#17 Alon Turjeman </p>
+                            </article>
+                            <article class="playerHeadFourthLine" id="lahlaHead">
+                                <a href="#"><img src="images/playersProfile/lahlaHead.png"></a>
+                                <p>#11 Maharan Lahla</p>
+                            </article>    
+                        </div>
+
+                    </section>
+
+                </main>
+            </section>
+        </div>
+    
+    </body>
+</html>
